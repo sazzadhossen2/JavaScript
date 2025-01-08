@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket</title>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+
+  <button onclick="
+
+let randomNumber =Math.random() *3;
+
+if(randomNumber >0 && randomNumber <=1){
+ ComputerChoice= 'Bat';
+
+} else if(randomNumber >1 && randomNumber <= 2){
+  ComputerChoice= 'Ball';
+
+}  else{
+   ComputerChoice= 'Stump';
+  
+}
+ 
+
+   let resultMsg;
+if(ComputerChoice === 'Bat'){
+resultMsg='User Win';
+} else if(ComputerChoice==='Ball'){
+resultMsg='Its tie';
+} else if(ComputerChoice==='Stump'){
+resultMsg='Computer has won';
+}
+
+alert(`You Have Chose Bat. Computer choice is ${ComputerChoice} And ${resultMsg} `);
+
+  ">Bat</button>
+  <button >Ball</button>
+  <button>Stump</button>
+</body>
+</html>
