@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  <script>
+    let product={
+      company:"Mango",
+      price:55,
+      'Item-name':"T-Shirt",
+      displayPrice: function(){
+        console.log(`Price of the product is ৳${this.price}`)
+      }
+    }
+
+
+    console.log('This is KG Coding'.toLocaleUpperCase());
+    console.log("This is KG Coding".replace("KG","Knowledge Gate"));
+
+
+    let a =5;
+    let b = a;
+    console.log(`a=${a}, b=${b}`);
+
+    a = 9;
+    console.log(`a=${a}, b=${b}`);
+
+
+    let x ={num: 5};
+    let y =x;
+    console.log(`x=${x}, y=${y}`);
+
+    x.num =9;
+    console.log(`x=${x}, y=${y}`);
+
+
+    let products={
+      company:"Mango",
+      price:55,
+      'Item-name':"T-Shirt",
+      displayPrice: function(){
+        console.log(`Price of the product is ৳${this.price}`)
+      }
+    }
+
+let copyProduct=products;
+console.log(products);
+copyProduct.company="Apple";
+console.log(products);
+
+
+let {company,price}=products;
+console.log(company);
+console.log(price);
+  </script>
+</body>
+</html>
